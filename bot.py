@@ -10,7 +10,7 @@ dispatcher = updater.dispatcher
 lista_fotos=[]
 lista_stickers=[]
 lista_gifs=[]
-lista_chistes=["Cuando la vida te de la espalda, tócale el culo", "Iban 2 y se cayó el del medio"]
+lista_chistes=["Cuando la vida te de la espalda, tócale el culo", "Iban 2 y se cayó el del medio", "¿Cuál es el colmo de los colmos? Que un mudo le diga a un sordo que un ciego lo está mirando"]
 lista_amor=["Podré no verte, podré no hablarte, pero lo que jamás podré será olvidarte", "Tal vez no te de lo mejor del mundo, pero siempre tendrás lo mejor de mí"]
 
 tupla_todo=(lista_amor,lista_chistes,lista_fotos)
