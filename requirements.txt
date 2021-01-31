@@ -1,2 +1,1 @@
-Updater
-CommandHandler
+python-telegram-bot
