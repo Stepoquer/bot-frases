@@ -11,8 +11,8 @@ lista_fotos=[]
 lista_stickers=[]
 lista_gifs=[]
 lista_chistes=["Cuando la vida te de la espalda, tócale el culo", "Iban 2 y se cayó el del medio",\
-	       "¿Cuál es el colmo de los colmos? Que un mudo le diga a un sordo que un ciego lo está mirando", "-Buen día, quisiera alquilar Shrek Forever\n-Lo siento pero la tiene que devolver tomorrow"\
-	      "— Hola, soy paraguayo y quiero pedirle la mano de su hija para cogérmela\n—¿¡Para qué?!?\n—Paraguayo.", "Un hombre entra en un bar furioso y con una pistola en la mano y dice:\n-¿QUIÉN MIERDA SE\
+	       "¿Cuál es el colmo de los colmos? Que un mudo le diga a un sordo que un ciego lo está mirando", "-Buen día, quisiera alquilar Shrek Forever\n-Lo siento pero la tiene que devolver tomorrow",\
+	      "—Hola, soy paraguayo y quiero pedirle la mano de su hija para cogérmela\n—¿¡Para qué?!?\n—Paraguayo.", "Un hombre entra en un bar furioso y con una pistola en la mano y dice:\n-¿QUIÉN MIERDA SE\
 	      ACOSTÓ CON MI ESPOSA?\nA lo que un hombre al fondo del bar contesta:\n-Amigo, no tienes suficientes balas..."]
 lista_amor=["Podré no verte, podré no hablarte, pero lo que jamás podré será olvidarte", "Tal vez no te de lo mejor del mundo, pero siempre tendrás lo mejor de mí"]
 
