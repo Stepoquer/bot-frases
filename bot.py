@@ -38,7 +38,7 @@ dispatcher.add_handler(amor_handler)
 
 #contador_chistes=1
 def chistes(update, context):
-	context.bot.send_message(chat_id=update.message.chat_id, text= random.choice(lista_chistes)
+	context.bot.send_message(chat_id=update.message.chat_id, text= random.choice(lista_chistes))
 chistes_handler=CommandHandler('chistes', chistes)
 dispatcher.add_handler(chistes_handler)
 
