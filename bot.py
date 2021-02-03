@@ -10,7 +10,7 @@ dispatcher = updater.dispatcher
 lista_fotos=[]
 lista_stickers=[]
 lista_gifs=[]
-lista_chistes=["Cuando la vida te de la espalda, tócale el culo", "-Tú sabés por qué el cincuenta y nueve está de pie?\n-No, por qué?\-Porque luego sesenta",\
+lista_chistes=["Cuando la vida te de la espalda, tócale el culo", "-Tú sabés por qué el cincuenta y nueve está de pie?\n-No, por qué?\n-Porque luego sesenta",\
 	       "¿Cuál es el colmo de los colmos? Que un mudo le diga a un sordo que un ciego lo está mirando", "-Buen día, quisiera alquilar Shrek Forever\n-Lo siento pero la tiene que devolver tomorrow",\
 	      "—Hola, soy paraguayo y quiero pedirle la mano de su hija para cogérmela\n—¿¡Para qué?!?\n—Paraguayo.", "Un hombre entra en un bar furioso y con una pistola en la mano y dice:\n-¿QUIÉN MIERDA SE ACOSTÓ CON MI ESPOSA?\nA lo que un hombre al fondo del bar contesta:\n-Amigo, no tienes suficientes balas...",\
 	      "Érase una vez un perro que respiraba por el culo, se sentó y se murió", ""]
