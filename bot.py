@@ -36,24 +36,31 @@ def amor(update, context):
 amor_handler=CommandHandler('amor', amor)
 dispatcher.add_handler(amor_handler)
 
-contador_chistes=0
+contador_chistes=1
 def chistes(update, context):
 	if contador_chistes<8:
 		contador_chistes=contador_chistes+1
 		if contador_chistes==1:
 			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[0])
+			contador_chistes=contador_chistes+1
 		if contador_chistes==2:
 			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[1])
+			contador_chistes=contador_chistes+1
 		if contador_chistes==3:
 			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[2])
+			contador_chistes=contador_chistes+1
 		if contador_chistes==4:
 			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[3])
+			contador_chistes=contador_chistes+1
 		if contador_chistes==5:
 			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[4])
+			contador_chistes=contador_chistes+1
 		if contador_chistes==6:
 			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[5])
+			contador_chistes=contador_chistes+1
 		if contador_chistes==7:
 			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[6])
+			contador_chistes=contador_chistes+1
 		if contador_chistes==8:
 			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[0])
 			random.shuffle(lista)
