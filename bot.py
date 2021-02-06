@@ -39,6 +39,7 @@ dispatcher.add_handler(amor_handler)
 contador_chistes=0
 
 def chistes(update, context):
+	global contador_chistes
 	if contador_chistes<9:
 		contador_chistes=contador_chistes+1
 			if contador_chistes==1:
