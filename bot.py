@@ -36,6 +36,7 @@ def amor(update, context):
 amor_handler=CommandHandler('amor', amor)
 dispatcher.add_handler(amor_handler)
 
+contador_chistes=0
 def chistes(update, context):
 	global contador_chistes
 	if contador_chistes<9:
