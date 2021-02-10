@@ -36,30 +36,28 @@ def amor(update, context):
 amor_handler=CommandHandler('amor', amor)
 dispatcher.add_handler(amor_handler)
 
-#contador_chistes=0
-
-#def chistes(update, context):
-#	global contador_chistes
-#	if contador_chistes<9:
-#		contador_chistes=contador_chistes+1
-#		if contador_chistes==1:
-#			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[0])
-#		if contador_chistes==2:
-#			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[1])
-#		if contador_chistes==3:
-#			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[2])
-#		if contador_chistes==4:
-#			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[3])
-#		if contador_chistes==5:
-#			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[4])
-#		if contador_chistes==6:
-#			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[5])
-#		if contador_chistes==7:
-#			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[6])
-#		if contador_chistes==8:
-#			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[0])
-#			random.shuffle(lista)
-#			contador_chistes=0
+def chistes(update, context):
+	global contador_chistes
+	if contador_chistes<9:
+		contador_chistes=contador_chistes+1
+		if contador_chistes==1:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[0])
+		if contador_chistes==2:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[1])
+		if contador_chistes==3:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[2])
+		if contador_chistes==4:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[3])
+		if contador_chistes==5:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[4])
+		if contador_chistes==6:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[5])
+		if contador_chistes==7:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[6])
+		if contador_chistes==8:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_chistes[0])
+			random.shuffle(lista_chistes)
+			contador_chistes=0
 chistes_handler=CommandHandler('chistes', chistes)
 dispatcher.add_handler(chistes_handler)
 
