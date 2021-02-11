@@ -14,7 +14,8 @@ lista_chistes=["Cuando la vida te de la espalda, tócale el culo", "-Tú sabés 
 	       "¿Cuál es el colmo de los colmos? Que un mudo le diga a un sordo que un ciego lo está mirando", "-Buen día, quisiera alquilar Shrek Forever\n-Lo siento pero la tiene que devolver tomorrow",\
 	      "—Hola, soy paraguayo y quiero pedirle la mano de su hija para cogérmela\n—¿¡Para qué?!?\n—Paraguayo.", "Un hombre entra en un bar furioso y con una pistola en la mano y dice:\n-¿QUIÉN MIERDA SE ACOSTÓ CON MI ESPOSA?\nA lo que un hombre al fondo del bar contesta:\n-Amigo, no tienes suficientes balas...",\
 	      "Érase una vez un perro que respiraba por el culo, se sentó y se murió", ""]
-lista_amor=["Con vos aprendí a amar", "Tal vez no te de lo mejor del mundo, pero siempre vas a tener lo mejor de mí","Si te tengo a vos lo tengo todo","No importa la distancia siempre vamos a estar juntitos"]
+lista_amor=["Con vos aprendí a amar", "Tal vez no te de lo mejor del mundo, pero siempre vas a tener lo mejor de mí","Si te tengo a vos lo tengo todo","No importa la distancia siempre vamos a estar juntitos",\
+			"Si te tengo a vos, lo tengo todo", "Podré no verte, podré no amarte, pero lo que jamás podré será olvidarte","Quiero olvidarte, pero sin el 'olvi'"]
 
 tupla_todo=(lista_amor,lista_chistes,lista_fotos)
 
@@ -31,8 +32,31 @@ def comandos(update, context):
 comandos_handler=CommandHandler('comandos', comandos)
 dispatcher.add_handler(comandos_handler)
 
+contador_amor=0
 def amor(update, context):
-	context.bot.send_message(chat_id=update.message.chat_id, text= random.choice(lista_amor))
+	global contador_amor
+	if contador_amor<10:
+		contador_amor=contador_amor+1
+		if contador_amor==1:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[0])
+		if contador_amor==2:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[1])
+		if contador_amor==3:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[2])
+		if contador_amor==4:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[3])
+		if contador_amor==5:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[4])
+		if contador_amor==6:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[5])
+		if contador_amor==7:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[6])
+		if contador_amor==8:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[7])
+		if contador_amor==9:
+			context.bot.send_message(chat_id=update.message.chat_id, text= lista_amor[0])
+			random.shuffle(lista_amor)
+			contador_amor=0
 amor_handler=CommandHandler('amor', amor)
 dispatcher.add_handler(amor_handler)
 
